@@ -1,0 +1,82 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    direction: ltr;
+}
+
+/* how to use CSS FONTS
+     HEEBO:    font-family: 'Heebo', sans-serif;
+     LORA:        font-family: 'Lora', serif;
+ */
+
+/*VARIABLES*/
+:root {
+    --moca: #E0D3B5;
+    --cream: #F5F3F1;
+    --offwhite: whitesmoke;
+    --coffee: #AF9559;
+}
+
+h1, h2, h3 {
+    font-family: 'Lora', serif;
+}
+
+h1 {
+    font-size: 3em;
+    margin-left: 40px;
+    margin-bottom: 5px;
+}
+
+#page_description {
+    margin-left: 50px;
+    font-size: 1.5em;
+    line-height: 1;
+}
+
+p {
+    font-family: 'Heebo', sans-serif;
+}
+
+header {
+    padding-top: 100px;
+    width: 100%;
+    height: 360px;
+    color: var(--offwhite);
+    background-image: url("../pics/holdingbreads.jpg");
+    background-position: center left;
+}
+
+section {
+    width: 100%;
+    text-align: center;
+    padding: 30px 100px;
+}
+
+#sec1{
+    background-color: var(--moca);
+}
+
+#recommendations {
+    display: flex;
+    width: max-content;
+    margin: 30px auto;
+}
+
+footer {
+    color: var(--offwhite);
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#contact_info {
+    width: 100%;
+    text-align: center;
+}
+
+footer a {
+    color: var(--offwhite);
+}

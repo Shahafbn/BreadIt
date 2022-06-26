@@ -1,0 +1,278 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    direction: ltr;
+}
+
+/* how to use CSS FONTS
+     HEEBO:    font-family: 'Heebo', sans-serif;
+     LORA:        font-family: 'Lora', serif;
+ */
+
+/*VARIABLES*/
+:root {
+    --moca: #E0D3B5;
+    --cream: #F5F3F1;
+    --offwhite: whitesmoke;
+    --coffee: #AF9559;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Lora', serif;
+}
+
+h1 {
+    font-size: 3em;
+    margin-left: 40px;
+    margin-bottom: 5px;
+}
+
+p, li, label {
+    font-family: 'Heebo', sans-serif;
+}
+
+#subtitle {
+    margin-bottom: 35px;
+}
+
+header {
+    padding-top: 100px;
+    width: 100%;
+    height: 230px;
+    color: var(--offwhite);
+    background-image: url("../pics/holdingbreads.jpg");
+    background-position: center left;
+}
+
+section {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+}
+
+#sec1{
+    background-color: var(--moca);
+}
+
+/**Challah Recipe Page Style Rules**/
+
+#recipe {
+    display: flex;
+    background-color: var(--cream);
+    max-width: max-content;
+    margin: 0px auto;
+    padding: 20px;
+    column-gap: 10px;
+}
+
+#recipe img {
+    width: 340px;
+    height: 230px;
+
+}
+
+#ingredients_and_instructions {
+    text-align: left;
+    max-width: 550px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#challa_photos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/**End Of Challah Recipe Page Style Rules**/
+
+/**Buy Page & Gallery Style Rules**/
+#iteminfo {
+    display: flex;
+    width: max-content;
+    margin: 0 auto;
+    background-color: var(--cream);
+
+}
+
+.info {
+    text-align: left;
+    padding: 50px;
+}
+
+#iteminfo div:nth-of-type(2) {
+    display: flex;
+    flex-direction :column;
+    row-gap: 20px;
+    padding: 50px;
+}
+
+.breadimg {
+    width: 220px;
+    height: 220px;
+}
+
+.bread_p {
+    margin-bottom: 25px;
+}
+
+#goeswith {
+    margin-top: 40px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content:space-between;
+    width: 300px;
+
+}
+
+#goeswith img {
+    width: 70px;
+    height: 70px;
+}
+
+#goeswith figure {
+    margin: 0;
+}
+
+#goeswith figcaption{
+    text-align: center;
+}
+
+#quantity {
+    margin: 10px 0 30px 0;
+    padding: 5px 8px;
+    border: 1px solid var(--coffee);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px -5px rgba(77,77,77,0.75);
+}
+
+#quantity:focus {
+    box-shadow: inset 0px 0px 10px 0px rgba(150,122,93,0.7);
+    outline: 2px solid var(--coffee);
+}
+
+#order {
+    display: block;
+    width: 100px;
+    background-color: var(--coffee);
+    color: var(--offwhite);
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px #808080;
+}
+
+#gallery_container {
+    position: relative;
+    margin: 0 auto;
+    width: 550px;
+}
+
+#gallery_container img {
+    max-width: 100%;
+    max-width: 100%;
+}
+
+#initial {
+    display: block;
+}
+
+.slidephoto {
+    display: none;
+}
+
+.slidephoto span {
+    display: inline-block;
+    position: absolute;
+    font-family: 'Heebo', sans-serif;
+    left: 20px;
+    top: 10px;
+    color: white;
+    background-color: black;
+    padding: 0 5px;
+}
+
+.control {
+    position: absolute;
+    top: 44%;
+    transition: 0.3s;
+}
+
+.control:hover {
+    opacity: 0.7;
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
+
+#thumbnails {
+    display: flex;
+    width: 550px;
+    margin: 0 auto;
+
+}
+
+.thumbnail_container {
+    margin: 0;   
+}
+
+.thumbnail {
+     opacity: 0.4;
+     width: 100%;
+     height: 100%;
+     transition: 0.3s;
+}
+
+.thumbnail:hover {
+    border-radius: 25px;
+    opacity: 1;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+footer {
+    color: var(--offwhite);
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+}
+
+#contact_info {
+    width: 100%;
+    text-align: center;
+}
+
+footer a {
+    color: var(--offwhite);
+}
+
+.breadcrumb ol {
+    background-color: var(--moca);
+    margin: 0;
+    padding-top: 15px;
+}
+.breadcrumb ol li {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+}
+
+.breadcrumb ol li:after {
+    content: " >";
+}
+
+.breadcrumb ol li:last-child:after {
+    content: "";
+}
+
+.breadcrumb ol li a {
+    background-color: var(--moca);
+    color: black;
+}

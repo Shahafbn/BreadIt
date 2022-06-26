@@ -1,0 +1,51 @@
+﻿nav[aria-label="main nav"] {
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    top: 0;
+    font-family: 'Heebo', sans-serif;
+    z-index: 1;
+}
+
+
+nav ul {
+   list-style-type: none; 
+   margin: 0;
+   padding: 0;
+   display: flex;
+}
+
+nav li a {
+    display: inline-block;
+    background-color: black;
+    color: white;
+}
+
+a[href="#"] {
+    cursor: not-allowed;
+}
+
+nav ul li a {
+    display: block;
+    width: 140px;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.submenu_items {
+    display: none;
+    position: absolute;
+}
+
+nav ul li:hover .submenu_items {
+    display: inline-block;
+    width: 150px;
+    background-color: inherit;
+    top: 60px;
+}
+
+nav ul li a:hover {
+    background-color: brown;
+    text-decoration: underline;
+}
