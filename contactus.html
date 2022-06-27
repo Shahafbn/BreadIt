@@ -3,9 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <title>Contact Us - Bread It</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
+    <meta name="description" content="contact form" />
+    <meta name="keywords" content="contact us breadit" />
     <link rel="icon" type="image/x-icon" href="pics/grain-wheat.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -63,22 +62,22 @@
                 <h2>Contact Form</h2>
                 <label for="firstName">
                     First Name:<br>
-                    <input type="text" id="firstName" name="firstname" placeholder="first name" class="one_line_inp" required /><br>
+                    <input type="text" id="firstName" name="firstname" placeholder="first name" class="one_line_inp" aria-required="true" required /><br>
                 </label><br>
 
                 <label for="lastName">
                     Last Name:<br>
-                    <input type="text" id="lastName" name="lastname" placeholder="last name" class="one_line_inp" required /><br>
+                    <input type="text" id="lastName" name="lastname" placeholder="last name" class="one_line_inp" aria-required="true" required /><br>
                 </label><br>
 
                 <label for="email">
                     E-mail:<br>
-                    <input type="text" id="email" name="email" placeholder="email" class="one_line_inp" required /><br>
+                    <input type="text" id="email" name="email" placeholder="email" class="one_line_inp" aria-required="true" required /><br>
                 </label><br>
 
                 <label for="selectoption">
                     Select the reason for contacting us:<br />
-                    <select id="selectoption" required class="one_line_inp" name="reason">
+                    <select id="selectoption" required class="one_line_inp" aria-required="true" name="reason">
                         <option value="1">General Questions</option>
                         <option value="2">Orders and Delivery </option>
                         <option value="3">Suggest a recipe</option>
@@ -88,7 +87,7 @@
                 <br />
                 <label for="agreement">
 
-                    <input type="checkbox" id="agreement" name="agreement" required />
+                    <input type="checkbox" id="agreement" name="agreement" aria-required="true" required />
                     I agree to the terms of use
                 </label><br>
 

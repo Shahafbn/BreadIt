@@ -3,9 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <title>French Bread - Bread It</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
+    <meta name="description" content="Order french bread" />
+    <meta name="keywords" content="french bread breadit order" />
     <link rel="icon" type="image/x-icon" href="pics/grain-wheat.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -89,7 +88,7 @@
                             </figure>
 
                         </div>
-                        <label for="quantity">Quantity<br /><input type="number" id="quantity" /></label>
+                        <label for="quantity">Quantity<br /><input type="number" id="quantity" min="1" aria-required="true" required/></label>
                         <br />
 
                         <input type="button"  value="Order" id="order"/>
@@ -107,26 +106,26 @@
                 <h2>More From Our Bakery</h2>
                 <!--Large slides from Gallery-->
                 <div id="gallery_container">
+                    <div id="altspace">chocolate orange souffle</div>
                     <div class="slidephoto" id="initial">
-                        <div id="altspace"></div>
                         <span>1 / 5</span>
                         <img src="pics/gallery1.jpg"/>
                     </div>
                     <div class="slidephoto">
                         <span>2 / 5</span>
-                        <img src="pics/gallery2.jpg" alt="cheese burekas" />
+                        <img src="pics/gallery2.jpg" />
                     </div>
                     <div class="slidephoto">
                         <span>3 / 5</span>
-                        <img src="pics/gallery3.jpg" alt="blueberry danish" />
+                        <img src="pics/gallery3.jpg"  />
                     </div>
                     <div class="slidephoto">
                         <span>4 / 5</span>
-                        <img src="pics/gallery4.jpg" alt="apple pie"/>
+                        <img src="pics/gallery4.jpg"/>
                     </div>
                     <div class="slidephoto">
                         <span>5 / 5</span>
-                        <img src="pics/gallery5.jpg" alt="chocolate cupcake"/>
+                        <img src="pics/gallery5.jpg"/>
                     </div>
                     <!--end of slides-->
                     <!--Controls-->
@@ -141,19 +140,19 @@
                 <!--NEED TO CHANGE ALT POSITIONS-->
                 <div id="thumbnails">
                     <div onclick="changeSlide(0)" class="thumbnail_container">
-                        <img src="pics/gallery1.jpg" class="thumbnail"  alt="chocolate ornage souffle"  />
+                        <img src="pics/gallery1.jpg" class="thumbnail"  alt="chocolate orange souffle"  />
                     </div>
                     <div onclick="changeSlide(1)" class="thumbnail_container">
-                        <img src="pics/gallery2.jpg" class="thumbnail" />
+                        <img src="pics/gallery2.jpg" class="thumbnail"  alt="cheese burekas" />
                     </div>
                     <div onclick="changeSlide(2)" class="thumbnail_container">
-                        <img src="pics/gallery3.jpg" class="thumbnail" />
+                        <img src="pics/gallery3.jpg" class="thumbnail"  alt="blueberry danish"/>
                     </div>
-                    <div onclick="changeSlide(3)" class="thumbnail_container">
-                        <img src="pics/gallery4.jpg" class="thumbnail" />
+                    <div onclick="changeSlide(3)" class="thumbnail_container" >
+                        <img src="pics/gallery4.jpg" class="thumbnail"  alt="apple pie">
                     </div>
                     <div onclick="changeSlide(4)" class="thumbnail_container">
-                        <img src="pics/gallery5.jpg" class="thumbnail" />
+                        <img src="pics/gallery5.jpg" class="thumbnail" alt="chocolate cupcake" />
                     </div>
                 </div>
             </section>
@@ -180,9 +179,14 @@
                 <p>Or online through our <a href="contactus.html">Online Contact Form</a></p>
             </div>
             <div>
+            <div>
                 <p><b>Bake It is a project website made by</b>  <br />Linoy Dangur & Shahaf Ben Ami</p>
                 <a href="About.html">About Us</a><br />
-                <a href="Sitemap.html">Site Map</a>
+                <a href="Sitemap.html" class="smallspace">Site Map</a><br />
+                <h3>Credits</h3>
+                <a href="https://www.flaticon.com/free-icons/jam" title="jam icons">Jam icons created by Umeicon - Flaticon</a><br>
+                <a href="https://www.flaticon.com/free-icons/avocado" title="avocado icons">Avocado icons created by Freepik - Flaticon</a><br>
+                <a href="https://www.flaticon.com/free-icons/butter" title="Butter icons">Butter icons created by Freepik - Flaticon</a>
             </div>
         </footer>
 
