@@ -162,6 +162,16 @@ section {
     box-shadow: 1px 1px 4px #808080;
 }
 
+#altspace {
+    position: absolute;
+    width: max-content;
+    top: 300px;
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+    padding: 5px;
+}
+
 #gallery_container {
     position: relative;
     margin: 0 auto;
@@ -169,7 +179,6 @@ section {
 }
 
 #gallery_container img {
-    max-width: 100%;
     max-width: 100%;
 }
 
@@ -241,7 +250,6 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-around;
-}
 }
 
 #contact_info {
