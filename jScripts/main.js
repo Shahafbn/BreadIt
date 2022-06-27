@@ -10,15 +10,15 @@ function prevSlide() {
 }
 
 function changeSlide(slideNum) {
-
     currentSlide = slideNum;
+    var caption = document.getElementById('altspace');
     if (slideNum > 4) {
         currentSlide = 0;
     }
     if (slideNum < 0) {
         currentSlide = 4;
     }
-    var thumbnails = document.getElementsByClassName('thumbnail');
+    var thumbnails = document.getElementsByClassName('thumbnail'); // יוצר מערך
     var slides = document.getElementsByClassName('slidephoto');
     for (var slide of slides) {
         slide.style.display = 'none';
@@ -30,6 +30,6 @@ function changeSlide(slideNum) {
     
     thumbnails[currentSlide].style.opacity = 1;
     slides[currentSlide].style.display = 'block';
-    document.getElementById('altspace').innerHTML = thumbnails[currentSlide].img.alt;
+    caption.innerHTML = thumbnails[currentSlide].alt;
     
 }
